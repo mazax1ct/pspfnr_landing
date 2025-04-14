@@ -1,0 +1,22 @@
+$xs: 480px;
+$sm: 768px;
+$md: 1024px;
+$hd: 1220px;
+$lg: 1400px;
+$fhd: 1900px;
+
+:root {
+    --text: #000;
+    --bg: #fff;
+    --bg_2: #F5F9FF;
+    --accent_1: #4242EA;
+    --accent_1_hover: #2929CB;
+    --accent_2: #F85C48;
+    --container_padding: 30px;
+    --header_min_height: 65px;
+    --container_max_width: 1300px;
+    --primary_font: 'Montserrat', Arial, sans-serif;
+    @media(min-width: $md) {
+        --header_min_height: 267px;
+    }
+}

@@ -1,0 +1,38 @@
+.form {
+    background-color: var(--bg_2);
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 15px;
+    @media(min-width: $hd) {
+        margin-top: 50px;
+        padding: 50px;
+    }
+
+    .input-group {
+        & + .form__note {
+            margin-top: -10px;
+            @media(min-width: $hd) {
+                margin-top: -40px;
+            }
+        }
+    }
+
+    &__note {
+        font-size: 12px;
+        @media(min-width: $hd) {
+            font-size: 15px;
+        }
+
+        a {
+            color: var(--accent_1);
+        }
+    }
+
+    &__button-block {
+        margin-top: 20px;
+        text-align: center;
+        @media(min-width: $hd) {
+            margin-top: 50px;
+        }
+    }
+}

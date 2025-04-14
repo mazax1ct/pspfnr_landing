@@ -1,0 +1,99 @@
+.input-group {
+    display: block;
+    margin-bottom: 20px;
+    @media(min-width: $hd) {
+        margin-bottom: 50px;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 10px;
+        @media(min-width: $hd) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.input,
+.textarea {
+    border-radius: 5px;
+    border: 1px solid rgba(#2E2C2C, 0.44);
+    background-color: transparent;
+    color: var(--text);
+    font-weight: 500;
+    height: 40px;
+    padding: 0 16px;
+    transition: background-color 0.3s, border-color 0.3s;
+    width: 100%;
+    @media(min-width: $hd) {
+        height: 58px;
+    }
+
+    &::-webkit-input-placeholder {
+        opacity: 1;
+    }
+
+    &::-moz-placeholder {
+        opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+        opacity: 1;
+    }
+
+    &:focus {
+        &::-webkit-input-placeholder {
+            opacity: 0;
+        }
+
+        &::-moz-placeholder {
+            opacity: 0;
+        }
+
+        &:-ms-input-placeholder {
+            opacity: 0;
+        }
+    }
+
+    &:disabled {
+        border-color: #ccc;
+        color: #ccc;
+
+        &::-webkit-input-placeholder {}
+
+        &::-moz-placeholder {}
+
+        &:-ms-input-placeholder {}
+    }
+
+    &.error {
+        border-color: var(--accent_2);
+
+        &:focus {
+            border-color: var(--accent_2);
+        }
+    }
+}
+
+.textarea {
+    @include scrollbar;
+    height: 120px;
+}
+
+.error-text {
+    color: var(--accent_2);
+    display: block;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+textarea {
+    &:focus {
+        outline: 0;
+    }
+}

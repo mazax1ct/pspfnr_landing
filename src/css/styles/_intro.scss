@@ -1,0 +1,35 @@
+.intro {
+    background-color: var(--bg_2);
+    background-image: url("../images/bg/biggest_logo.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 50px;
+    background-size: 390px 366px;
+    border-radius: 5px;
+    padding: 15px;
+    @media(min-width: $hd) {
+        background-size: 782px 732px;
+        background-position: 139% 87%;
+        padding: 50px;
+    }
+
+    h1 {
+        max-width: 430px;
+        @media(min-width: $hd) {
+            max-width: 610px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        @media(min-width: $hd) {
+            margin-bottom: 50px;
+            max-width: 500px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+    }
+}

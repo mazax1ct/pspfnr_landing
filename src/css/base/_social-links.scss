@@ -1,0 +1,54 @@
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    @media(min-width: $hd) {
+        gap: 8px;
+    }
+}
+
+.social-link {
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    transition: background-color 0.3s;
+    width: 30px;
+    @media(min-width: $hd) {
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+    }
+
+    &--vk {
+        background-color: #0077FF;
+        @include hover {
+            background-color: darken(#0077FF, 5%);
+        }
+    }
+
+    &--tg {
+        background-color: #24A1DE;
+        @include hover {
+            background-color: darken(#24A1DE, 5%);
+        }
+    }
+
+    &--ok {
+        background-color: #F96600;
+        @include hover {
+            background-color: darken(#F96600, 5%);
+        }
+    }
+
+    svg {
+        fill: #fff;
+        height: 30px;
+        width: 30px;
+        @media(min-width: $hd) {
+            height: 40px;
+            width: 40px;
+        }
+    }
+}

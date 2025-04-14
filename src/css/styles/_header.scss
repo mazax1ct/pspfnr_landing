@@ -1,0 +1,22 @@
+.header {
+    flex-shrink: 0;
+
+    &__inner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        @media(min-width: $hd) {
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+    }
+
+    &__logo {
+        width: 150px;
+        @media(min-width: $hd) {
+            width: 260px;
+        }
+    }
+}

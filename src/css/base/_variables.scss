@@ -12,11 +12,8 @@ $fhd: 1900px;
     --accent_1: #4242EA;
     --accent_1_hover: #2929CB;
     --accent_2: #F85C48;
+    --accent_2_hover: darken(#F85C48, 5%);
     --container_padding: 30px;
-    --header_min_height: 65px;
     --container_max_width: 1300px;
     --primary_font: 'Montserrat', Arial, sans-serif;
-    @media(min-width: $md) {
-        --header_min_height: 267px;
-    }
 }

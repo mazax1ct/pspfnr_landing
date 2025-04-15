@@ -23,7 +23,6 @@
     <link rel="preload" href="fonts/subset-Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/subset-Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -67,9 +66,9 @@
                     </div>
 
                     <div class="intro__buttons">
-                        <a class="button button--primary" href="#">ВСТУПИТЬ В ПСПФНР</a>
+                        <a class="js-scroll-to button button--primary" href="#form">ВСТУПИТЬ В ПСПФНР</a>
 
-                        <a class="button button--secondary" href="#">ПЕРЕЙТИ НА ОФИЦИЛЬНЫЙ САЙТ</a>
+                        <a class="button button--secondary" href="#" target="_blank">ПЕРЕЙТИ НА ОФИЦИЛЬНЫЙ САЙТ</a>
                     </div>
                 </div>
 
@@ -77,36 +76,279 @@
 
             <hr>
 
-            <section class="page__section">
-                <h2><span>6</span> самых распространенных вопросов, которые мы поможем решить!</h2>
+            <section class="page__section section_2">
+                <h2><span class="accent_2-color">6</span> самых распространенных вопросов, которые мы поможем решить!</h2>
 
-                <p>Бесплатная юридическая помощь для участников Профсоюза! Мы поможем разобраться в законах и защитим ваши права!</p>
+                <p class="section_2__text">Бесплатная юридическая помощь для участников Профсоюза! Мы поможем разобраться в законах и защитим ваши права!</p>
+
+                <div class="tabs">
+                    <ul class="tabs-nav">
+                        <li class="tabs-nav__item">
+                            <button class="js-tab tabs-nav__button is-active" type="button" data-tab="1">ЖКХ</button>
+                        </li>
+                        <li class="tabs-nav__item">
+                            <button class="js-tab tabs-nav__button" type="button" data-tab="2">Недвижимость</button>
+                        </li>
+                        <li class="tabs-nav__item">
+                            <button class="js-tab tabs-nav__button" type="button" data-tab="3">Наследство</button>
+                        </li>
+                        <li class="tabs-nav__item">
+                            <button class="js-tab tabs-nav__button" type="button" data-tab="4">Пенсия</button>
+                        </li>
+                        <li class="tabs-nav__item">
+                            <button class="js-tab tabs-nav__button" type="button" data-tab="5">Налоги</button>
+                        </li>
+                        <li class="tabs-nav__item">
+                            <button class="js-tab tabs-nav__button" type="button" data-tab="6">Авто</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab is-active" data-tab="1">
+                        <div class="banner">
+                            <div class="banner__text">
+                                <p>Как оспорить завышенные счета<br> за коммунальные услуги?</p>
+                                <p>Куда жаловаться на управляющую<br> компанию?</p>
+                                <p>Как добиться перерасчета<br> или вернуть переплату?</p>
+                            </div>
+
+                            <div class="banner__image">
+                                <img src="images/content/banner/img_1.jpg" srcset="images/content/banner/img_1@2x.jpg 2x" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab" data-tab="2">
+                        <div class="banner">
+                            <div class="banner__text">
+                                <p>Как правильно разделить доли<br> в квартире?</p>
+                                <p>Что делать, если соседи<br> по участку нарушают ваши права?</p>
+                                <p>Как защитить свои права<br> на имущество?</p>
+                            </div>
+
+                            <div class="banner__image">
+                                <img src="images/content/banner/img_2.jpg" srcset="images/content/banner/img_2@2x.jpg 2x" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab" data-tab="3">
+                        <div class="banner">
+                            <div class="banner__text">
+                                <p>Как правильно составить завещание,<br> чтобы избежать споров?</p>
+                                <p>Что делать, если наследники<br> не могут договориться?</p>
+                                <p>Как защитить свои права<br> на наследство?</p>
+                            </div>
+
+                            <div class="banner__image">
+                                <img src="images/content/banner/img_3.jpg" srcset="images/content/banner/img_3@2x.jpg 2x" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab" data-tab="4">
+                        <div class="banner">
+                            <div class="banner__text">
+                                <p>Как узнать, правильно<br> ли рассчитана ваша пенсия?</p>
+                                <p>Что делать, если вам<br> отказали в перерасчете?</p>
+                                <p>Как получить положенные<br> льготы и надбавки?</p>
+                            </div>
+
+                            <div class="banner__image">
+                                <img src="images/content/banner/img_4.jpg" srcset="images/content/banner/img_4@2x.jpg 2x" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab" data-tab="5">
+                        <div class="banner">
+                            <div class="banner__text">
+                                <p>Как проверить, правильно<br> ли рассчитаны ваши налоги?</p>
+                                <p>Что делать, если пришло<br> уведомление о задолженности?</p>
+                                <p>Как вернуть переплату<br> по налогам?</p>
+                            </div>
+
+                            <div class="banner__image">
+                                <img src="images/content/banner/img_5.jpg" srcset="images/content/banner/img_5@2x.jpg 2x" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab" data-tab="6">
+                        <div class="banner">
+                            <div class="banner__text">
+                                <p>Как оспорить штраф,<br> если вы не согласны?</p>
+                                <p>Что делать, если попали в ДТП?</p>
+                                <p>Как получить страховые выплаты<br> в полном объеме?</p>
+                            </div>
+
+                            <div class="banner__image">
+                                <img src="images/content/banner/img_6.jpg" srcset="images/content/banner/img_6@2x.jpg 2x" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="button button--primary" href="#">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
             </section>
 
-            <section class="page__section">
-                <h2>Почему вам стоит вступить в профсоюз</h2>
+            <section class="page__section section_3 full-width">
+                <div class="container">
+                    <h2>Почему вам стоит вступить в профсоюз</h2>
+
+                    <div class="features">
+                        <div class="feature" style="background-image: url('images/content/features/img_1@2x.png')">
+                            <p>Бесплатные<br> юридические<br> консультации</p>
+
+                            <button class="js-popup-opener feature__button" type="button" data-popup="popup_1">Подробнее</button>
+
+                            <div class="popup" data-popup="popup_1">
+                                <div class="js-popup-closer popup__shade"></div>
+                                <div class="popup__body popup__body--bg_2 popup__body--w_915">
+                                    <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#close_icon" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="popup__body-text">
+                                        <p>В любой сложной ситуации участник Профсоюза может обратиться в наш юридический отдел</p>
+
+                                        <p><b>Чем мы можем помочь?</b></p>
+
+                                        <p>
+                                            - Ответим на ваши вопросы по любым правовым темам.<br>
+                                            - Проконсультируем и подскажем, как действовать в сложной ситуации.<br>
+                                            - Поможем составить документы и заявления.
+                                        </p>
+
+                                        <p>
+                                            Только для участников ПСПФНР.<br>
+                                            Подробнее на официальном сайте.
+                                        </p>
+
+                                        <a class="button button--secondary" href="#" target="_blank">ПЕРЕЙТИ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature" style="background-image: url('images/content/features/img_2@2x.png')">
+                            <p>Доступ к<br> программам<br> лояльности</p>
+
+                            <button class="js-popup-opener feature__button" type="button" data-popup="popup_2">Подробнее</button>
+
+                            <div class="popup" data-popup="popup_2">
+                                <div class="js-popup-closer popup__shade"></div>
+                                <div class="popup__body popup__body--bg_2 popup__body--w_915">
+                                    <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#close_icon" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="popup__body-text">
+                                        <p>
+                                            • Жилищная программа<br>
+                                            • Топливная программа<br>
+                                            • Транспортная программа<br>
+                                            • Санаторно-курортная программа<br>
+                                            • Программа страхования<br>
+                                            • Обучающие курсы<br>
+                                            • Благотворительная программа
+                                        </p>
+
+                                        <p>
+                                            Только для участников ПСПФНР.<br>
+                                            Подробнее на официальном сайте.
+                                        </p>
+
+                                        <a class="button button--secondary" href="#" target="_blank">ПЕРЕЙТИ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature" style="background-image: url('images/content/features/img_3@2x.png')">
+                            <p>Вы станете частью<br> благотворительных<br> дел</p>
+
+                            <button class="js-popup-opener feature__button" type="button" data-popup="popup_3">Подробнее</button>
+
+                            <div class="popup" data-popup="popup_3">
+                                <div class="js-popup-closer popup__shade"></div>
+                                <div class="popup__body popup__body--bg_2 popup__body--w_915">
+                                    <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#close_icon" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="popup__body-text">
+                                        <p>Профсоюз Свободных Предпринимателей продолжает развивать благотворительную деятельность.</p>
+
+                                        <p>На данный момент основные направления деятельности — это помощь:</p>
+
+                                        <p>
+                                            - детским образовательным учреждениям, в том числе, дополнительного образования;<br>
+                                            - ветеранам;<br>
+                                            - пожилым людям.
+                                        </p>
+
+                                        <p>И поучаствовать в этом может каждый!</p>
+
+                                        <p>
+                                            Только для участников ПСПФНР.<br>
+                                            Подробнее на официальном сайте.
+                                        </p>
+
+                                        <a class="button button--secondary" href="#" target="_blank">ПЕРЕЙТИ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="info__inner">
+                            <div class="info__item">
+                                <p class="info__item-title"><span>> 10</span> лет</p>
+                                <p>со дня основания</p>
+                            </div>
+
+                            <div class="info__item">
+                                <p class="info__item-title"><span>> 88</span></p>
+                                <p>городских подразделений</p>
+                            </div>
+
+                            <div class="info__item">
+                                <p class="info__item-title"><span>>&nbsp;64</span>&nbsp;тыс.</p>
+                                <p>членов организации</p>
+                            </div>
+                        </div>
+
+                        <a class="js-scroll-to button button--primary" href="#form">ВСТУПИТЬ В ПСПФНР</a>
+                    </div>
+                </div>
             </section>
 
-            <section class="page__section">
+            <section id="form" class="page__section">
                 <h2>Вступите в профсоюз и получите доступ<br> ко всем привилегиям уже сегодня!</h2>
 
                 <p>Оставьте заявку, и мы обязательно свяжемся с вами!</p>
 
-                <form class="form" action="">
+                <form class="js-form form">
                     <label class="input-group">
                         <span class="input-group__label">Ваши Ф.И.О.</span>
-                        <input class="input error" name="name" type="text">
-                        <span class="error-text">Заполните поле</span>
+                        <input class="input" name="name" type="text" value="" required autocomplete="off">
                     </label>
 
                     <label class="input-group">
                         <span class="input-group__label">Контактный номер</span>
-                        <input class="js-phone-mask input" name="phone" type="text">
+                        <input class="js-phone-mask input" name="phone" type="text" value="" required autocomplete="off">
                     </label>
 
                     <label class="input-group">
                         <span class="input-group__label">Город</span>
-                        <input class="input" name="city" type="text">
+                        <input class="input" name="city" type="text" value="" required autocomplete="off">
                     </label>
 
                     <p class="form__note">Нажимая кнопку «Вступить в ПСПФНР», я даю <a href="#">согласие на обработку персональных данных</a><br> и соглашаюсь с <a href="#">политикой конфиденциальности</a></p>
@@ -117,7 +359,6 @@
                 </form>
             </section>
         </div>
-
     </main>
 
     <footer class="footer">
@@ -155,21 +396,21 @@
         </div>
     </footer>
 
-    
-
     <script src="js/jquery-3.7.1.min.js"></script>
     
     <script src="js/jquery.inputmask.min.js"></script>
     
     <script src="js/inputmask-init.js"></script>
     
-    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/popup.js"></script>
     
-    <script src="js/fancybox-defaults.js"></script>
-    
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/form.js"></script>
     
     <script src="js/main.js"></script>
 </body>
+
+
+
+
 
 </html>

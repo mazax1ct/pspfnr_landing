@@ -10,15 +10,12 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    scrollbar-gutter: stable;
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 150px;
-
-    &.is-overflow {
-        scrollbar-gutter: stable;
-    }
+    //scroll-padding-top: 150px;
 }
 
 .page {
@@ -40,7 +37,6 @@ html {
 
     &.is-overflow {
         overflow: hidden;
-        scrollbar-gutter: stable;
     }
 
     &__content {
@@ -54,6 +50,15 @@ html {
             padding-top: 100px;
             padding-bottom: 100px;
         }
+    }
+}
+
+.full-width {
+    margin-left: calc(0.02px - var(--container_padding));
+    margin-right: calc(0.02px - var(--container_padding));
+    @media(min-width: 1300px) {
+        margin-left: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
+        margin-right: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
     }
 }
 
@@ -206,6 +211,10 @@ ul {
     text-align: right;
 }
 
-.accent-color {
-    color: var(--accent);
+.accent_1-color {
+    color: var(--accent_1);
+}
+
+.accent_2-color {
+    color: var(--accent_2);
 }
